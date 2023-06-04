@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 // components
 import { BannerComponent } from '@org/common-ui';
-// objects
-import { exampleProducts } from '@org/products';
 
 @Component({
   standalone: true,
-  imports: [BannerComponent],
+  imports: [RouterModule, BannerComponent],
   selector: 'org-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'store';
-  products = exampleProducts;
+  title = 'admin';
 }
